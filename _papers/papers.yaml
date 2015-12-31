@@ -1,6 +1,14 @@
 ---
 - url: 'https://github.com/trigeorgis/deep-semi-nmf'
   bibtex: >
+    @article{dsnmf2015,
+      title={{A deep matrix factorization method for learning attribute representations}},
+      author={Trigeorgis, George and Bousmalis, Konstantinos and Zafeiriou, Stefanos and Schuller, Bj\"orn W.},
+      journal={{submitted to TPAMI}},
+      year={2015}
+    }
+- url: 'https://github.com/trigeorgis/deep-semi-nmf'
+  bibtex: >
     @inproceedings{dsnmf2014,
       title={{A Deep Semi-NMF Model for Learning Hidden Representations}},
       author={Trigeorgis, George and Bousmalis, Konstantinos and Zafeiriou, Stefanos and Schuller, Bj\"orn W.},
