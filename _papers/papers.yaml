@@ -1,0 +1,21 @@
+---
+- url: 'https://github.com/trigeorgis/deep-semi-nmf'
+  bibtex: >
+    @inproceedings{dsnmf2014,
+      title={{A Deep Semi-NMF Model for Learning Hidden Representations}},
+      author={Trigeorgis, George and Bousmalis, Konstantinos and Zafeiriou, Stefanos and Schuller, Bj\"orn W.},
+      booktitle={{International Conference on Machine Learning}},
+      year={2014}
+    }
+- url: 'http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0090562'
+  bibtex: >
+    @article{manifold2014,
+      title={{An algorithm for finding biologically significant features in microarray data based on a priori manifold learning}},
+      author={Hira, Zena M and Trigeorgis, George and Gillies, Duncan F},
+      journal={PloS one},
+      volume={9},
+      number={3},
+      pages={e90562},
+      year={2014},
+      publisher={Public Library of Science}
+    }

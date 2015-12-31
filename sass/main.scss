@@ -1,0 +1,283 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$blueish: rgb(0, 60, 113);
+$skyish: #606c88;
+
+$ashlight: #606c88;
+$ashdark: #3f4c6b;
+
+.image-container{
+  position: relative;
+}
+.photo-container{
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+.image-thumb{
+  position: relative;
+  background-color: #eee;
+}
+
+nav {
+  padding-right: 30px;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top li a {
+  color: #333 !important;
+  font-weight: 600 !important;
+  font-family: "Lato";
+}
+
+nav.navbar.navbar-default.navbar-fixed-top {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow:0 1px 0 rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.1);
+}
+
+headerperm {
+  background-color: rgba(200, 200, 200, 0.8);
+  z-index: 2;
+}
+
+
+html,body {
+  background:#fff;
+  overflow:hidden;
+}
+
+header {
+  text-align: left;
+  color: #fff;
+  font-family: "Oswald";
+  font-weight: 500;
+  background: linear-gradient(0deg, $ashlight 0%, $ashdark 100%);
+}
+
+hr.star-light:after {
+  color: #fff;
+  background: $skyish;
+}
+
+header h2 {
+  font-weight: 700;
+}
+
+header img {
+  display: block;
+}
+
+section {
+  font-size: 1.3em;  
+}
+
+header .intro-text {
+  display: block;
+  font-family: Alegreya;
+  font-size: 1.7em;
+}
+
+section {
+  padding: 100px 0;
+}
+
+section h2 {
+  margin: 0;
+  font-size: 2em;
+}
+
+
+
+section.success {
+  color: #fff;
+  background: $skyish;
+}
+
+.screen {
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+
+.content-blurred {
+  margin-top: 100px;
+  padding:0 1rem;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  filter: blur(15px);
+  -webkit-filter: blur(15px);
+  -moz-filter: blur(15px);
+  -o-filter: blur(15px);
+  -ms-filter: blur(15px);
+  filter: url('blur.svg#blur');
+  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius=('15'));
+  z-index: 1;
+}
+
+.content-blurred .content {
+  -webkit-backface-visibility:hidden;
+  -moz-backface-visibility:hidden;
+  -ms-backface-visibility:hidden;
+  backface-visibility:hidden;
+}
+
+.content-wrapper {
+  background:#fff;
+  position:relative;
+  padding:0 1rem;
+  z-index:1;
+  height:100%;
+  overflow:auto;
+  -webkit-backface-visibility:hidden;
+  -moz-backface-visibility:hidden;
+  -ms-backface-visibility:hidden;
+  backface-visibility:hidden;
+}
+
+.content-wrapper .content {
+    margin-top:0px;
+}
+
+.content {
+  display:block;
+  padding-top:1em;
+}
+
+#abstract {
+  font-family: 'Alegreya';
+}
+
+.authors {
+  margin-top: 20px;
+  .author {
+    .me {
+      border-bottom: 1px dashed #999;
+      display: inline;
+      font-weight: 600;
+      font-size: inherit;
+    }
+  }
+}
+
+#downloads .fa {
+  font-size: 4em;
+  margin-right: 1em;
+  color: white;
+}
+
+.bibtex {
+  font-family: consolas, monospace;
+  border-radius: 10px;
+  border-color: #000;
+  background-color: rgba(50, 50, 230, 0.1);
+}
+
+.paper {
+
+  a {
+    color: #111;
+    text-decoration: none;
+  }
+
+  border-radius: 10px;
+  border-color: #000;
+  background-color: #fafafa;
+
+  width: 100%;
+  margin: 0 auto 0 0;
+  margin-top: 20px;
+
+  font-family: 'Alegreya';
+
+  .title {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #555;
+    background-color: #eee;
+    padding: 8px;
+    //margin: -5px;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+
+  hr {
+    box-shadow: rgba(255,255,255,0.8) 1px 0px 0px;
+    margin: 2px;
+    color: black;
+  }
+
+  .fa-bookmark {
+    // font-size: 8px;
+    vertical-align: super;
+  }
+
+  .rest {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: inherit;
+  }
+
+  .authors {
+    padding: 10px;
+  }
+
+  .icons {
+    padding-bottom: -20px;
+  }
+
+  .author {
+    display: inline;
+    .me {
+      border-bottom: 1px dashed #999;
+      display: inline;
+      font-weight: 600;
+      font-size: inherit;
+    }
+  }
+
+  .bibtex {
+    margin: 10px;
+    padding: 15px;
+    font-family: consolas, monospace;
+    border-radius: 10px;
+    border-color: #000;
+    background-color: rgba(50, 50, 230, 0.1);
+  }
+}
+
+img.me {
+  width: 100px;
+  margin-top: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border-color: rgba(10, 10, 10, 0.8);
+  border-style: solid;
+  border-width: 3px;
+}
+
+header .row {
+  margin-top: 100px;
+  border-radius: 10px;
+  color: black;
+  border-color: rgba(255, 255, 255, 0.8);
+  border-style: solid;
+  border-width: 3px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.fa.large {
+  font-size: 1.5em;
+  margin-left: 10px;
+  margin-bottom: -8px;
+}
+
+.fa.large:hover {
+  color: lighten($blueish, 0.8);
+}
+
+

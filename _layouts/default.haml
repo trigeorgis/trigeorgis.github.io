@@ -1,0 +1,88 @@
+!!!
+%html{'ng-app' => 'AngularApp'}
+  %head
+    %title G.Trigeorgis
+    %link{:href => "/css/main.css", :rel => "stylesheet"}
+    %link{:href => "/css/syntax.css", :rel => "stylesheet"}
+    %script{:src => "//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.js"}
+    %script{:src => "//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
+    %script{:src => "/js/jquery.justified.min.js"}
+    %script{:src => "/js/bootstrap.min.js"}
+    %script{:src => "/js/bootstrap-sprockets.js"}
+    %script{:src => "/js/application.js"}
+    %link{:href => "http://fonts.googleapis.com/css?family=Montserrat:400,700", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "//brick.a.ssl.fastly.net/Andada:400,400i/Alegreya:400,700/Oswald:700", :rel => "stylesheet"}
+    %link{:href=>"//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css", :rel=>"stylesheet"}
+    %link{rel: 'icon', type: 'image/png', href: '/favicon.png'}
+    /[if lt IE 9]
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  %body#page-top.index
+    / Navigation
+    .screen
+      %headerperm
+        %nav.navbar.navbar-default.navbar-fixed-top
+          / Brand and toggle get grouped for better mobile display
+          .navbar-header.page-scroll
+            %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+              %span.sr-only Toggle navigation
+              %span.icon-bar
+              %span.icon-bar
+              %span.icon-bar
+            / %a.navbar-brand{:href => "#page-top"} George Trigeorgis
+          / Collect the nav links, forms, and other content for toggling
+          #bs-example-navbar-collapse-1.collapse.navbar-collapse{"ng-controller" => "ScrollCtrl"}
+            %ul.nav.navbar-nav.navbar-right
+              %li.page-scroll
+                %a{'ng-click' => "gotoElement('verytop')"} Home
+              %li.page-scroll
+                %a{'ng-click' => "gotoElement('papers')"} Publications
+              %li.page-scroll
+                %a{'ng-click' => "gotoElement('gallery')"} Gallery
+              %li.page-scroll
+                %a{'ng-click' => "gotoElement('contact')"} Contact
+        %div.heightdiv{style: 'height: 50px;'}
+        / Header
+      .content-wrapper
+        .content
+          {{ content }}
+        / Footer
+        %footer#contact.text-center
+          .footer-above
+            .container
+              .row
+                .footer-col.col-md-4
+                  %h3 Location
+                  %p
+                    351, Huxley Building
+                    %br>/
+                    DoC, Imperial College London
+                    %br>/
+                    180 Queens Gate
+                    %br>/
+                    SW7 2AZ, London, UK
+                    %br>/
+                    - email = 'g.trigeorgis@imperial.ac.uk'
+                    %a{href: email}
+                      = email
+                .footer-col.col-md-4
+                  %h3 Around the Web
+                  %ul.list-inline
+                    %li
+                      %a.btn-social.btn-outline{:href => "https://facebook.com/gtrigeorgis"}
+                        %i.fa.fa-fw.fa-facebook
+                    %li
+                      %a.btn-social.btn-outline{:href => "https://plus.google.com/+GeorgeTrigeorgis"}
+                        %i.fa.fa-fw.fa-google-plus
+                    / %li
+                    /   %a.btn-social.btn-outline{:href => "#"}
+                    /     %i.fa.fa-fw.fa-twitter
+                    %li
+                      %a.btn-social.btn-outline{:href => "https://www.linkedin.com/in/trigeorgis"}
+                        %i.fa.fa-fw.fa-linkedin
+          .footer-below
+            .container
+              .row
+                .col-lg-12
+                  Copyright © Trigeorgis 2016

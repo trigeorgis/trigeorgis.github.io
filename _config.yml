@@ -1,0 +1,5 @@
+name: George Trigeorgis
+markdown: redcarpet
+highlighter: rouge
+exclude: ['*.haml', 'sass', 'Rakefile', 'Gemfile', 'Gemfile.lock']
+paper_dir: '_papers'

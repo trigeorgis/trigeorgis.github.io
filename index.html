@@ -1,0 +1,79 @@
+---
+layout: default
+---
+<header id='verytop'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-2 col-md-2 col-xs-2'>
+        <img alt='' class='me' src='/imgs/me.jpg' width='100px'>
+      </div>
+      <div class='col-lg-8 col-md-8 col-xs-8'>
+        <h2>George Trigeorgis</h2>
+        <div class='intro-text'>
+          PhD Student &middot; Data Scientist &middot; Developer
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- About Section -->
+<section class='success'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-8 col-lg-offset-2'>
+        <p>My name is George Trigeorgis and I am a PhD candidate at Imperial College London. My research interests include deep learning, matrix factorisation, computer vision, and emotion recognition.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id='papers'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-12 text-center'>
+        <h2>Publications</h2>
+        <hr class='star-primary'>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-2 col-xd-4 col-md-4'></div>
+      <div class='col-lg-8 col-xd-8 col-md-8'>
+        {% for paper in site.data['papers'] %}
+        <div class='paper' ng-controller='paperCtrl'>
+          <div class='title'>{{ paper.title }}</div>
+          <div class='authors'>{{ paper.authors }}</div>
+          <div class='rest'>{{ paper.where }}, {{ paper.year }}</div>
+          <div class='icons'>
+            <a class='fa large fa-file-text-o' data-toggle='tooltip' ng-click='hideBibtex = !hideBibtex' title='Bibtex'></a>
+            <a class='fa large fa-external-link' href='{{ paper.url | urlify }}'></a>
+          </div>
+          <div class='bibtex' ng-hide='hideBibtex'>
+            <div class='nonbindable' ng-non-bindable='true'>
+              {% highlight properties %}
+              {{ paper.bibtex | xml_escape }}
+              {% endhighlight %}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+        <div class='col-lg-2 col-xd-4 col-md-4'></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id='gallery'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-12 text-center'>
+        <h2>Gallery</h2>
+        <hr class='star-primary'>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-12'>
+        <div class='image-container' id='gallery'>
+          pass
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

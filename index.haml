@@ -1,0 +1,60 @@
+\---
+layout: default
+\---
+
+%header#verytop
+  .container
+    .row
+      .col-lg-2.col-md-2.col-xs-2
+        %img.me{:alt => "", :src => '/imgs/me.jpg', width: '100px'}/
+      .col-lg-8.col-md-8.col-xs-8
+        %h2 George Trigeorgis
+        .intro-text
+          = "PhD Student &middot; Data Scientist &middot; Developer"
+
+/ About Section
+%section.success
+  .container
+    .row
+      .col-lg-8.col-lg-offset-2
+        %p My name is George Trigeorgis and I am a PhD candidate at Imperial College London. My research interests include deep learning, matrix factorisation, computer vision, and emotion recognition.
+
+%section#papers
+  .container
+    .row
+      .col-lg-12.text-center
+        %h2 Publications
+        %hr.star-primary/
+    .row
+
+      .col-lg-2.col-xd-4.col-md-4
+      .col-lg-8.col-xd-8.col-md-8
+        {% for paper in site.data['papers'] %}
+        .paper{'ng-controller' => 'paperCtrl'}
+          .title {{ paper.title }}
+          .authors {{ paper.authors }}
+          .rest {{ paper.where }}, {{ paper.year }}
+          .icons
+            %a.fa.large.fa-file-text-o{'data-toggle' => 'tooltip', title: 'Bibtex', 'ng-click' => 'hideBibtex = !hideBibtex'}
+            %a.fa.large.fa-external-link{href: "{{ paper.url | urlify }}" }
+          .bibtex{'ng-hide' => 'hideBibtex'}
+            .nonbindable{'ng-non-bindable' => 'true'}
+              {% highlight properties %}
+              {{ paper.bibtex | xml_escape }}
+              {% endhighlight %}
+        {% endfor %}
+        .col-lg-2.col-xd-4.col-md-4
+
+
+%section#gallery
+  .container
+    .row
+      .col-lg-12.text-center
+        %h2 Gallery
+        %hr.star-primary
+    .row
+      .col-lg-12
+        #gallery.image-container
+          pass
+
+
