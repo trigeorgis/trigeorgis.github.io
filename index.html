@@ -45,6 +45,9 @@ layout: default
           <div class='icons'>
             <a class='fa large fa-file-text-o' data-toggle='tooltip' ng-click='hideBibtex = !hideBibtex' title='Bibtex'></a>
             <a class='fa large fa-external-link' href='{{ paper.url | urlify }}'></a>
+            {% if paper.pdf %}
+            <a class='fa large fa-file-pdf-o' href='{{ paper.pdf | urlify }}'></a>
+            {% endif %}
           </div>
           <div class='bibtex' ng-hide='hideBibtex'>
             <div class='nonbindable' ng-non-bindable='true'>

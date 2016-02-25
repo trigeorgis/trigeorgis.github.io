@@ -37,6 +37,9 @@ layout: default
           .icons
             %a.fa.large.fa-file-text-o{'data-toggle' => 'tooltip', title: 'Bibtex', 'ng-click' => 'hideBibtex = !hideBibtex'}
             %a.fa.large.fa-external-link{href: "{{ paper.url | urlify }}" }
+            {% if paper.pdf %}
+            %a.fa.large.fa-file-pdf-o{href: "{{ paper.pdf | urlify }}" }
+            {% endif %}
           .bibtex{'ng-hide' => 'hideBibtex'}
             .nonbindable{'ng-non-bindable' => 'true'}
               {% highlight properties %}
