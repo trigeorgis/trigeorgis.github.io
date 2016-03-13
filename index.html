@@ -40,14 +40,27 @@ layout: default
         {% for paper in site.data['papers'] %}
         <div class='paper' ng-controller='paperCtrl'>
           <div class='title'>{{ paper.title }}</div>
+          <div class='thumb'>
+            <img src='{{ paper.thumbnail }}'>
+          </div>
           <div class='authors'>{{ paper.authors }}</div>
           <div class='rest'>{{ paper.where }}, {{ paper.year }}</div>
+          <div class='description'>
+            {{ paper.description }}
+          </div>
           <div class='icons'>
-            <a class='fa large fa-file-text-o' data-toggle='tooltip' ng-click='hideBibtex = !hideBibtex' title='Bibtex'></a>
-            <a class='fa large fa-external-link' href='{{ paper.url | urlify }}'></a>
-            {% if paper.pdf %}
-            <a class='fa large fa-file-pdf-o' href='{{ paper.pdf | urlify }}'></a>
+            <!-- %a.fa.large.fa-file-text-o{'data-toggle' => 'tooltip', title: 'Bibtex', 'ng-click' => 'hideBibtex = !hideBibtex'} -->
+            <!-- %a.fa.large.fa-external-link{href: "{{ paper.url | urlify }}" } -->
+            {% if paper.url %}
+            <a href='{{ paper.url | urlify }}'>[external]</a>
             {% endif %}
+            <!-- %a.fa.large.fa-file-pdf-o{href: "{{ paper.pdf | urlify }}" } -->
+            {% if paper.pdf %}
+            <a href='{{ paper.pdf | urlify }}'>[pdf]</a>
+            {% endif %}
+            <a data-toggle='tooltip' ng-click='hideBibtex = !hideBibtex' title='Bibtex'>
+              [bibtex]
+            </a>
           </div>
           <div class='bibtex' ng-hide='hideBibtex'>
             <div class='nonbindable' ng-non-bindable='true'>

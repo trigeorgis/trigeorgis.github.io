@@ -1,12 +1,44 @@
 ---
+- bibtex: >
+    @inproceedings{trigeorgis_mdm16,
+      title={{Mnemonic Descent Method}},
+      author={Trigeorgis, George and Snape, Patrick and Antonakos, Epameinondas and Nicolaou, Mihalis A. and Zafeiriou, Stefanos},
+      booktitle={{Computer Vision and Pattern Recognition (CVPR)}},
+      year={2016}
+    }
+- bibtex: >
+    @inproceedings{trigeorgis_dctw16,
+      title={{Deep Canonical Time Warping}},
+      author={Trigeorgis, George and Nicolaou, Mihalis and Zafeiriou, Stefanos and Schuller, Bjoern W.},
+      booktitle={{Computer Vision and Pattern Recognition (CVPR)}},
+      year={2016}
+    }
+- pdf: 'http://ibug.doc.ic.ac.uk/media/uploads/documents/learning_audio_paralinguistics_from_the_raw_waveform.pdf'
+  bibtex: >
+    @inproceedings{trigeorgis_icassp16,
+      author = {George Trigeorgis and Fabien Ringeval and Ray B. and Erik Marchi and Nicolaou, Mihalis A., and Bjoern Schuller and Stefanos Zafeiriou},
+      booktitle = {ICASSP},
+      month = {march},
+      title = {Adieu Features? End-to- End Speech Emotion Recognition using a Deep Convolutional Recurrent Network},
+      year = {2016},
+    }
+  description: 'Oral. Winner of the IEEE Spoken Language Processing Student Grant.'
+- bibtex: >
+    @inproceedings{trigeorgis_dctw15,
+      title={{Towards Deep Multimodal Alignment}},
+      author={Trigeorgis, George and Nicolaou, Mihalis and Zafeiriou, Stefanos and Schuller, Bjoern W.},
+      booktitle={{NIPS Multimodal Machine Learning Workshop}},
+      year={2015}
+    }
+  description: 'Spotlight.'
 - url: 'https://github.com/trigeorgis/deep-semi-nmf'
   pdf: 'http://arxiv.org/abs/1509.03248'
   bibtex: >
     @article{dsnmf2015,
       title={{A deep matrix factorization method for learning attribute representations}},
       author={Trigeorgis, George and Bousmalis, Konstantinos and Zafeiriou, Stefanos and Schuller, Bjoern W.},
-      journal={{to be published in TPAMI}},
-      year={2015}
+      journal={{to be published in Transactions of Pattern Analysis and Machine Intelligence (TPAMI)}},
+      year={2016}
     }
 - url: 'https://github.com/trigeorgis/deep-semi-nmf'
   pdf: 'http://jmlr.org/proceedings/papers/v32/trigeorgis14.pdf'

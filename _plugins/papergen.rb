@@ -4,7 +4,7 @@ require 'yaml'
 module Jekyll
 
   class Paper < Liquid::Drop
-    attr_reader :title, :authors, :bibtex, :where, :year, :url, :pdf, :supp
+    attr_reader :title, :authors, :bibtex, :where, :year, :url, :pdf, :supp, :description, :thumbnail
 
     def initialize(site, paper)
       bibtex = BibTeX.parse(paper['bibtex'])[0]
@@ -16,6 +16,8 @@ module Jekyll
 
       @year = bibtex.year
       @title = bibtex.title
+      @thumbnail = "/imgs/papers/#{bibtex.key}.png"
+      @description = paper['description']
       @pdf = paper['pdf']
       @supp = paper['supp']
       @authors = bibtex.author.map{|a| 
