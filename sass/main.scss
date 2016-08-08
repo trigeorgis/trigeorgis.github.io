@@ -68,7 +68,7 @@ header img {
 }
 
 section {
-  font-size: 1.3em;  
+  font-size: 1.3em;
 }
 
 header .intro-text {
@@ -85,8 +85,6 @@ section h2 {
   margin: 0;
   font-size: 2em;
 }
-
-
 
 section.success {
   color: #fff;
@@ -153,7 +151,6 @@ section.success {
 }
 
 .authors {
-  margin-top: 20px;
   .author {
     .me {
       border-bottom: 1px dashed #999;
@@ -170,13 +167,6 @@ section.success {
   color: white;
 }
 
-.bibtex {
-  font-family: consolas, monospace;
-  border-radius: 10px;
-  border-color: #000;
-  background-color: rgba(50, 50, 230, 0.1);
-}
-
 .paper {
 
   a {
@@ -184,46 +174,26 @@ section.success {
     text-decoration: none;
   }
 
-  border-radius: 10px;
-  border-color: #000;
-  background-color: #fafafa;
-
   width: 100%;
-  margin: 0 auto 0 0;
-  margin-top: 20px;
-  height: 220px;
-  
+
   img {
-    border-radius: 5px;
     border-style: solid;
-    border-width: 2px;
     float: right;
-    margin-top:20px;
-    margin-right: 10px;
     height: 100px;
   }
-  
+
   .description {
     font-size: 12px;
     font-style: italic;
   }
+
   font-family: 'Alegreya';
 
   .title {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    margin-top: 20px;
     color: #555;
-    background-color: #eee;
-    padding: 8px;
-    //margin: -5px;
     font-weight: 600;
-    font-size: 1.2em;
-  }
-
-  hr {
-    box-shadow: rgba(255,255,255,0.8) 1px 0px 0px;
-    margin: 2px;
-    color: black;
+    font-size: 1em;
   }
 
   .fa-bookmark {
@@ -233,17 +203,14 @@ section.success {
 
   .rest {
     padding-left: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     font-size: inherit;
   }
 
   .authors {
-    padding: 10px;
+    padding-left: 10px;
   }
 
-  .icons {
-    padding-bottom: -20px;
-  }
 
   .author {
     display: inline;
@@ -255,20 +222,19 @@ section.success {
     }
   }
 
-  .bibtex {
-    margin: 10px;
-    padding: 15px;
+  pre.bibtex {
+    margin-right: 0%;
+  	margin-top: 1.2em;
+  	margin-bottom: 1em;
+  	border: 1px solid silver;
     font-family: consolas, monospace;
-    border-radius: 10px;
-    border-color: #000;
-    background-color: rgba(50, 50, 230, 0.1);
   }
 }
 
 img.me {
-  width: 100px;
+  width: 150px;
   margin-top: 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 20px;
   border-color: rgba(10, 10, 10, 0.8);
   border-style: solid;
@@ -277,9 +243,7 @@ img.me {
 
 header .row {
   margin-top: 100px;
-  border-radius: 10px;
   color: black;
-  border-color: rgba(255, 255, 255, 0.8);
   border-style: solid;
   border-width: 3px;
   background-color: rgba(255, 255, 255, 0.75);
@@ -294,5 +258,3 @@ header .row {
 .fa.large:hover {
   color: lighten($blueish, 0.8);
 }
-
-

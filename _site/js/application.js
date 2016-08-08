@@ -141,7 +141,7 @@ $(function(){
 	});
 
 	// offset to demo blurring
-	contentWrapper.scrollTop = 100;
+	contentWrapper.scrollTop = 10;
 
 	getFlickrPictures();
 

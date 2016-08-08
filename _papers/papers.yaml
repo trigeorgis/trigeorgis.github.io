@@ -1,7 +1,9 @@
 ---
-- bibtex: >
+- code: 'https://github.com/trigeorgis/mdm'
+  pdf: 'http://ibug.doc.ic.ac.uk/media/uploads/documents/trigeorgis2016mnemonic.pdf'
+  bibtex: >
     @inproceedings{trigeorgis_mdm16,
-      title={{Mnemonic Descent Method}},
+      title={{Mnemonic Descent Method: A recurrent process applied for end-to-end face alignment}},
       author={Trigeorgis, George and Snape, Patrick and Antonakos, Epameinondas and Nicolaou, Mihalis A. and Zafeiriou, Stefanos},
       booktitle={{Computer Vision and Pattern Recognition (CVPR)}},
       year={2016}
@@ -13,6 +15,7 @@
       booktitle={{Computer Vision and Pattern Recognition (CVPR)}},
       year={2016}
     }
+  pdf: 'http://ibug.doc.ic.ac.uk/media/uploads/documents/0005.pdf'
 - pdf: 'http://ibug.doc.ic.ac.uk/media/uploads/documents/learning_audio_paralinguistics_from_the_raw_waveform.pdf'
   bibtex: >
     @inproceedings{trigeorgis_icassp16,

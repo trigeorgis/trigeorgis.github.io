@@ -5936,70 +5936,43 @@ section.success {
 #abstract {
   font-family: 'Alegreya'; }
 
-.authors {
-  margin-top: 20px; }
-  .authors .author .me {
-    border-bottom: 1px dashed #999;
-    display: inline;
-    font-weight: 600;
-    font-size: inherit; }
+.authors .author .me {
+  border-bottom: 1px dashed #999;
+  display: inline;
+  font-weight: 600;
+  font-size: inherit; }
 
 #downloads .fa {
   font-size: 4em;
   margin-right: 1em;
   color: white; }
 
-.bibtex {
-  font-family: consolas, monospace;
-  border-radius: 10px;
-  border-color: #000;
-  background-color: rgba(50, 50, 230, 0.1); }
-
 .paper {
-  border-radius: 10px;
-  border-color: #000;
-  background-color: #fafafa;
   width: 100%;
-  margin: 0 auto 0 0;
-  margin-top: 20px;
-  height: 220px;
   font-family: 'Alegreya'; }
   .paper a {
     color: #111;
     text-decoration: none; }
   .paper img {
-    border-radius: 5px;
     border-style: solid;
-    border-width: 2px;
     float: right;
-    margin-top: 20px;
-    margin-right: 10px;
     height: 100px; }
   .paper .description {
     font-size: 12px;
     font-style: italic; }
   .paper .title {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    margin-top: 20px;
     color: #555;
-    background-color: #eee;
-    padding: 8px;
     font-weight: 600;
-    font-size: 1.2em; }
-  .paper hr {
-    box-shadow: rgba(255, 255, 255, 0.8) 1px 0px 0px;
-    margin: 2px;
-    color: black; }
+    font-size: 1em; }
   .paper .fa-bookmark {
     vertical-align: super; }
   .paper .rest {
     padding-left: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     font-size: inherit; }
   .paper .authors {
-    padding: 10px; }
-  .paper .icons {
-    padding-bottom: -20px; }
+    padding-left: 10px; }
   .paper .author {
     display: inline; }
     .paper .author .me {
@@ -6007,18 +5980,17 @@ section.success {
       display: inline;
       font-weight: 600;
       font-size: inherit; }
-  .paper .bibtex {
-    margin: 10px;
-    padding: 15px;
-    font-family: consolas, monospace;
-    border-radius: 10px;
-    border-color: #000;
-    background-color: rgba(50, 50, 230, 0.1); }
+  .paper pre.bibtex {
+    margin-right: 0%;
+    margin-top: 1.2em;
+    margin-bottom: 1em;
+    border: 1px solid silver;
+    font-family: consolas, monospace; }
 
 img.me {
-  width: 100px;
+  width: 150px;
   margin-top: 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 20px;
   border-color: rgba(10, 10, 10, 0.8);
   border-style: solid;
@@ -6026,9 +5998,7 @@ img.me {
 
 header .row {
   margin-top: 100px;
-  border-radius: 10px;
   color: black;
-  border-color: rgba(255, 255, 255, 0.8);
   border-style: solid;
   border-width: 3px;
   background-color: rgba(255, 255, 255, 0.75); }

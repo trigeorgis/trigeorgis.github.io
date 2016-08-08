@@ -4,12 +4,13 @@ require 'yaml'
 module Jekyll
 
   class Paper < Liquid::Drop
-    attr_reader :title, :authors, :bibtex, :where, :year, :url, :pdf, :supp, :description, :thumbnail
+    attr_reader :title, :authors, :bibtex, :where, :year, :url, :pdf, :supp, :description, :thumbnail, :code
 
     def initialize(site, paper)
       bibtex = BibTeX.parse(paper['bibtex'])[0]
 
       @url = paper['url']
+      @code = paper['code']
       @bibtex = bibtex.to_s
 
       bibtex = bibtex.convert(:latex)
