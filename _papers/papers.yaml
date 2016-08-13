@@ -1,4 +1,11 @@
 ---
+  bibtex: >
+    @inproceedings{domain_separation_nets_16,
+      title={{Domain Separation Networks}},
+      author={Bousmalis, Konstantinos and Trigeorgis, George and Silberman, Nathan and Krishnan, Dilip and Erhan, Dumitru},
+      booktitle={{Neural Information Processing Systems (NIPS)}},
+      year={2016}
+    }
 - code: 'https://github.com/trigeorgis/mdm'
   pdf: 'http://ibug.doc.ic.ac.uk/media/uploads/documents/trigeorgis2016mnemonic.pdf'
   bibtex: >
@@ -20,8 +27,7 @@
   bibtex: >
     @inproceedings{trigeorgis_icassp16,
       author = {George Trigeorgis and Fabien Ringeval and Ray B. and Erik Marchi and Nicolaou, Mihalis A., and Bjoern Schuller and Stefanos Zafeiriou},
-      booktitle = {ICASSP},
-      month = {march},
+      booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
       title = {Adieu Features? End-to- End Speech Emotion Recognition using a Deep Convolutional Recurrent Network},
       year = {2016},
     }
@@ -30,7 +36,7 @@
     @inproceedings{trigeorgis_dctw15,
       title={{Towards Deep Multimodal Alignment}},
       author={Trigeorgis, George and Nicolaou, Mihalis and Zafeiriou, Stefanos and Schuller, Bjoern W.},
-      booktitle={{NIPS Multimodal Machine Learning Workshop}},
+      booktitle={{Neural Information Processing Systems (NIPS) Multimodal Machine Learning Workshop}},
       year={2015}
     }
   description: 'Spotlight.'
@@ -40,7 +46,7 @@
     @article{dsnmf2015,
       title={{A deep matrix factorization method for learning attribute representations}},
       author={Trigeorgis, George and Bousmalis, Konstantinos and Zafeiriou, Stefanos and Schuller, Bjoern W.},
-      journal={{to be published in Transactions of Pattern Analysis and Machine Intelligence (TPAMI)}},
+      journal={{Transactions of Pattern Analysis and Machine Intelligence (TPAMI)}},
       year={2016}
     }
 - url: 'https://github.com/trigeorgis/deep-semi-nmf'
@@ -50,7 +56,7 @@
     @inproceedings{dsnmf2014,
       title={{A Deep Semi-NMF Model for Learning Hidden Representations}},
       author={Trigeorgis, George and Bousmalis, Konstantinos and Zafeiriou, Stefanos and Schuller, Bjoern W.},
-      booktitle={{International Conference on Machine Learning}},
+      booktitle={{International Conference on Machine Learning (ICML)}},
       year={2014}
     }
 - url: 'http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0090562'

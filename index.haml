@@ -25,7 +25,15 @@ layout: default
 
       .col-lg-2.col-xd-4.col-md-4
       .col-lg-8.col-xd-8.col-md-8
+        {% for show_articles in [false, true] %}
+        {{ if show_articles }}
+        %strong Articles
+        {{ else }}
+        %strong Top-tier conferences
+        {{ endif }}
+
         {% for paper in site.data['papers'] %}
+        {% if paper.is_article == show_articles %}
         .paper{'ng-controller' => 'paperCtrl'}
           .title {{ paper.title }}
           /.thumb
@@ -52,6 +60,8 @@ layout: default
             .nonbindable{'ng-non-bindable' => 'true'}
               %pre
                 {{ paper.bibtex | xml_escape }}
+        {% endif %}
+        {% endfor %}
         {% endfor %}
         .col-lg-2.col-xd-4.col-md-4
 

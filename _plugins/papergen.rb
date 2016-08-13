@@ -4,7 +4,7 @@ require 'yaml'
 module Jekyll
 
   class Paper < Liquid::Drop
-    attr_reader :title, :authors, :bibtex, :where, :year, :url, :pdf, :supp, :description, :thumbnail, :code
+    attr_reader :title, :authors, :bibtex, :where, :year, :url, :pdf, :supp, :description, :thumbnail, :code, :is_article
 
     def initialize(site, paper)
       bibtex = BibTeX.parse(paper['bibtex'])[0]
@@ -12,7 +12,7 @@ module Jekyll
       @url = paper['url']
       @code = paper['code']
       @bibtex = bibtex.to_s
-
+      @is_article = @bibtex.include? 'inproceedings'
       bibtex = bibtex.convert(:latex)
 
       @year = bibtex.year
@@ -21,8 +21,8 @@ module Jekyll
       @description = paper['description']
       @pdf = paper['pdf']
       @supp = paper['supp']
-      @authors = bibtex.author.map{|a| 
-        p = a.split(',') 
+      @authors = bibtex.author.map{|a|
+        p = a.split(',')
         "#{p[1][0..1]}. #{p[0]}"
       }.join(', ') 
 
