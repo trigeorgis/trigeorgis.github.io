@@ -30,7 +30,14 @@ layout: default
     <div class='row'>
       <div class='col-lg-2 col-xd-4 col-md-4'></div>
       <div class='col-lg-8 col-xd-8 col-md-8'>
+        {% for show_articles in [false, true] %}
+        {{ if show_articles }}
+        <strong>Articles</strong>
+        {{ else }}
+        <strong>Top-tier conferences</strong>
+        {{ endif }}
         {% for paper in site.data['papers'] %}
+        {% if paper.is_article == show_articles %}
         <div class='paper' ng-controller='paperCtrl'>
           <div class='title'>{{ paper.title }}</div>
           <!-- .thumb -->
@@ -62,6 +69,8 @@ layout: default
             </div>
           </div>
         </div>
+        {% endif %}
+        {% endfor %}
         {% endfor %}
         <div class='col-lg-2 col-xd-4 col-md-4'></div>
       </div>
