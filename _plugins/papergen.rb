@@ -11,8 +11,8 @@ module Jekyll
 
       @url = paper['url']
       @code = paper['code']
-      @bibtex = bibtex.to_s
-      @is_article = @bibtex.include? 'inproceedings'
+      @bibtex = bibtex.to_s.gsub('*', '')
+      @is_article = !(@bibtex.include? 'inproceedings')
       bibtex = bibtex.convert(:latex)
 
       @year = bibtex.year
@@ -24,13 +24,13 @@ module Jekyll
       @authors = bibtex.author.map{|a|
         p = a.split(',')
         "#{p[1][0..1]}. #{p[0]}"
-      }.join(', ') 
+      }.join(', ')
 
       @where = bibtex.booktitle ? bibtex.booktitle : bibtex.journal
     end
 
     def inspect
-      "#<Jekyll::Paper @title=#{@title}>"
+      "#<Jekyll::Paper @title=#{@title} @is_article=#{@is_article}>"
     end
   end
 

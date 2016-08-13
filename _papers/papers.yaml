@@ -2,10 +2,11 @@
 - bibtex: >
     @inproceedings{domain_separation_nets16,
       title={{Domain Separation Networks}},
-      author={Bousmalis, Konstantinos and Trigeorgis, George and Silberman, Nathan and Krishnan, Dilip and Erhan, Dumitru},
+      author={Bousmalis*, Konstantinos and Trigeorgis*, George and Silberman, Nathan and Krishnan, Dilip and Erhan, Dumitru},
       booktitle={{Neural Information Processing Systems (NIPS)}},
       year={2016}
     }
+  description: '* denotes joint first-authorship.'
 - code: 'https://github.com/trigeorgis/mdm'
   pdf: 'http://ibug.doc.ic.ac.uk/media/uploads/documents/trigeorgis2016mnemonic.pdf'
   bibtex: >
@@ -63,7 +64,7 @@
   bibtex: >
     @article{manifold2014,
       title={{An algorithm for finding biologically significant features in microarray data based on a priori manifold learning}},
-      author={Hira, Zena M and Trigeorgis, George and Gillies, Duncan F},
+      author={Hira*, Zena M and Trigeorgis*, George and Gillies, Duncan F},
       journal={PloS one},
       volume={9},
       number={3},
@@ -71,3 +72,4 @@
       year={2014},
       publisher={Public Library of Science}
     }
+  description: '* denotes joint authorship.'

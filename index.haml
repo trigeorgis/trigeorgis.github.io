@@ -19,52 +19,29 @@ layout: default
   .container
     .row
       .col-lg-12.text-center
-        %h2 Publications
+        %h2 Articles
         %hr.star-primary/
     .row
-
       .col-lg-2.col-xd-4.col-md-4
       .col-lg-8.col-xd-8.col-md-8
-        {% for show_articles in [false, true] %}
-        {{ if show_articles }}
-        %strong Articles
-        {{ else }}
-        %strong Top-tier conferences
-        {{ endif }}
-
+        {{ paper.is_article }}
         {% for paper in site.data['papers'] %}
-        {% if paper.is_article == show_articles %}
-        .paper{'ng-controller' => 'paperCtrl'}
-          .title {{ paper.title }}
-          /.thumb
-          /  %img{src: "{{ paper.thumbnail }}"}
-          .authors {{ paper.authors }}
-          .rest {{ paper.where }}, {{ paper.year }}
-          .description
-            {{ paper.description }}
-          .icons
-            /%a.fa.large.fa-file-text-o{'data-toggle' => 'tooltip', title: 'Bibtex', 'ng-click' => 'hideBibtex = !hideBibtex'}
-            /%a.fa.large.fa-external-link{href: "{{ paper.url | urlify }}" }
-            {% if paper.url %}
-            %a{href: "{{ paper.url | urlify }}" } [external]
-            {% endif %}
-            {% if paper.pdf %}
-            %a{href: "{{ paper.pdf | urlify }}" } [pdf]
-            {% endif %}
-            {% if paper.code %}
-            %a{href: "{{ paper.code | urlify }}" } [code]
-            {% endif %}
-            %a{'data-toggle' => 'tooltip', title: 'Bibtex', 'ng-click' => 'hideBibtex = !hideBibtex'}
-              [bibtex]
-          .bibtex{'ng-hide' => 'hideBibtex'}
-            .nonbindable{'ng-non-bindable' => 'true'}
-              %pre
-                {{ paper.bibtex | xml_escape }}
+        {% if paper.is_article == true %}
+        {% include paper.html paper=paper %}
         {% endif %}
         {% endfor %}
+    .row
+      .col-lg-12.text-center
+        %h2 Conference Publications
+        %hr.star-primary/
+    .row
+      .col-lg-2.col-xd-4.col-md-4
+      .col-lg-8.col-xd-8.col-md-8
+        {% for paper in site.data['papers'] %}
+        {% if paper.is_article == false%}
+        {% include paper.html paper=paper %}
+        {% endif %}
         {% endfor %}
-        .col-lg-2.col-xd-4.col-md-4
-
 
 %section#gallery
   .container
