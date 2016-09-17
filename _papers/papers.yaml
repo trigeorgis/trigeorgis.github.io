@@ -1,5 +1,6 @@
 ---
-- bibtex: >
+- pdf: 'http://arxiv.org/pdf/1608.06019.pdf'
+  bibtex: >
     @inproceedings{domain_separation_nets16,
       title={{Domain Separation Networks}},
       author={Bousmalis*, Konstantinos and Trigeorgis*, George and Silberman, Nathan and Krishnan, Dilip and Erhan, Dumitru},
