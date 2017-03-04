@@ -1,0 +1,24 @@
+.paper{'ng-controller' => 'paperCtrl'}
+  .title {{ include.paper.title }}
+  .authors {{ include.paper.authors }}
+  .rest {{ include.paper.where }}, {{ include.paper.year }}
+  .description
+    {{ include.paper.description }}
+  .icons
+    /%a.fa.large.fa-file-text-o{'data-toggle' => 'tooltip', title: 'Bibtex', 'ng-click' => 'hideBibtex = !hideBibtex'}
+    /%a.fa.large.fa-external-link{href: "{{ include.paper.url | urlify }}" }
+    {% if include.paper.url %}
+    %a{href: "{{ include.paper.url | urlify }}" } [external]
+    {% endif %}
+    {% if include.paper.pdf %}
+    %a{href: "{{ include.paper.pdf | urlify }}" } [pdf]
+    {% endif %}
+    {% if include.paper.code %}
+    %a{href: "{{ include.paper.code | urlify }}" } [code]
+    {% endif %}
+    %a{'data-toggle' => 'tooltip', title: 'Bibtex', 'ng-click' => 'hideBibtex = !hideBibtex'}
+      [bibtex]
+  .bibtex{'ng-hide' => 'hideBibtex'}
+    .nonbindable{'ng-non-bindable' => 'true'}
+      %pre
+        {{ include.paper.bibtex | xml_escape }}

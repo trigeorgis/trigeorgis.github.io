@@ -1,0 +1,29 @@
+<div class='paper' ng-controller='paperCtrl'>
+  <div class='title'>{{ include.paper.title }}</div>
+  <div class='authors'>{{ include.paper.authors }}</div>
+  <div class='rest'>{{ include.paper.where }}, {{ include.paper.year }}</div>
+  <div class='description'>
+    {{ include.paper.description }}
+  </div>
+  <div class='icons'>
+    <!-- %a.fa.large.fa-file-text-o{'data-toggle' => 'tooltip', title: 'Bibtex', 'ng-click' => 'hideBibtex = !hideBibtex'} -->
+    <!-- %a.fa.large.fa-external-link{href: "{{ include.paper.url | urlify }}" } -->
+    {% if include.paper.url %}
+    <a href='{{ include.paper.url | urlify }}'>[external]</a>
+    {% endif %}
+    {% if include.paper.pdf %}
+    <a href='{{ include.paper.pdf | urlify }}'>[pdf]</a>
+    {% endif %}
+    {% if include.paper.code %}
+    <a href='{{ include.paper.code | urlify }}'>[code]</a>
+    {% endif %}
+    <a data-toggle='tooltip' ng-click='hideBibtex = !hideBibtex' title='Bibtex'>
+      [bibtex]
+    </a>
+  </div>
+  <div class='bibtex' ng-hide='hideBibtex'>
+    <div class='nonbindable' ng-non-bindable='true'>
+      <pre>{{ include.paper.bibtex | xml_escape }}</pre>
+    </div>
+  </div>
+</div>
