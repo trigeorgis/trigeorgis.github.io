@@ -1,5 +1,13 @@
 ---
 - bibtex: >
+    @article{dsnmf2015,
+      title={{Deep Canonical Time Warping for simultaneous alignment and representation learning of sequences}},
+      author={Trigeorgis, George and Nicolaou, Mihalis and Zafeiriou, Stefanos and Schuller, Bjoern W.},
+      journal={{Transactions of Pattern Analysis and Machine Intelligence (TPAMI)}},
+      year={2018}
+    }
+  description: 'To be published'
+- bibtex: >
    @inproceedings{trigeorgis2017normals,
      author = {George Trigeorgis and Patrick Snape and Stefanos Zafeiriou and Iasonas Kokkinos},
      booktitle = {{Computer Vision and Pattern Recognition (CVPR)}},
