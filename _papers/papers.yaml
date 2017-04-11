@@ -37,6 +37,7 @@
       year = {2017},
     }
 - pdf: 'http://arxiv.org/pdf/1608.06019.pdf'
+  code: 'https://github.com/tensorflow/models/tree/master/domain_adaptation'
   bibtex: >
     @inproceedings{domain_separation_nets16,
       title={{Domain Separation Networks}},
