@@ -1,4 +1,33 @@
 ---
+- bibtex: >
+   @inproceedings{trigeorgis2017normals,
+     author = {George Trigeorgis and Patrick Snape and Stefanos Zafeiriou and Iasonas Kokkinos},
+     booktitle = {{Computer Vision and Pattern Recognition (CVPR)}},
+     title = {{Normal Estimation For "in-the-wild" Faces Using Fully Convolutional Networks}},
+     year = {2017}
+   }
+- bibtex: >
+   @inproceedings{booth2017itw3dmm,
+       author = {J. Booth and E. Antonakos and S. Ploumpis and G. Trigeorgis and Y. Panagakis and S. Zafeiriou},
+       booktitle = {{Computer Vision and Pattern Recognition (CVPR)}},
+       month = {January},
+       title = {3D Face Morphable Models "In-the-Wild"},
+       url = {https://arxiv.org/abs/1701.05360},
+       year = {2017},
+   }
+  description: 'Spotlight.'
+  pdf: 'https://ibug.doc.ic.ac.uk/media/uploads/documents/1701.05360v1.pdf'
+  code: 'https://github.com/menpo/menpo3d/tree/master/menpo3d/morphablemodel'
+- pdf: 'https://ibug.doc.ic.ac.uk/media/uploads/documents/guler2017densereg.pdf'
+  code: 'https://github.com/ralpguler/DenseReg'
+  bibtex: > 
+    @inproceedings{guler2017densereg,
+      author = {R. Guler and Trigeorgis, George and E. Antonakos and P. Snape and S. Zafeiriou and I. Kokkinos},
+      booktitle = {{Computer Vision and Pattern Recognition (CVPR)}},
+      title = {DenseReg: Fully Convolutional Dense Shape Regression In-the-Wild},
+      url = {https://arxiv.org/pdf/1612.01202v1.pdf},
+      year = {2017},
+    }
 - pdf: 'http://arxiv.org/pdf/1608.06019.pdf'
   bibtex: >
     @inproceedings{domain_separation_nets16,
