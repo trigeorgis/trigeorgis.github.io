@@ -14,6 +14,8 @@
      title = {{Normal Estimation For "in-the-wild" Faces Using Fully Convolutional Networks}},
      year = {2017}
    }
+  pdf: 'https://ibug.doc.ic.ac.uk/media/uploads/documents/normal_estimation__cvpr_2017_-4.pdf'
+  url: 'https://github.com/trigeorgis/face_normals_cvpr17'
 - bibtex: >
    @inproceedings{booth2017itw3dmm,
        author = {J. Booth and E. Antonakos and S. Ploumpis and G. Trigeorgis and Y. Panagakis and S. Zafeiriou},
