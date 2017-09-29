@@ -5881,7 +5881,7 @@ section h2 {
   font-size: 2em; }
 
 section.success {
-  color: #fff;
+  color: #111;
   background: #606c88; }
 
 .screen {
@@ -6010,3 +6010,10 @@ header .row {
 
 .fa.large:hover {
   color: #003e75; }
+
+section.success {
+  background-image: url("/imgs/bg.jpg");
+  background-position: right top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%; }
