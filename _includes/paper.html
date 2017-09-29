@@ -14,6 +14,9 @@
     {% if include.paper.pdf %}
     <a href='{{ include.paper.pdf | urlify }}'>[pdf]</a>
     {% endif %}
+    {% if include.paper.supp %}
+    <a href='{{ include.paper.supp | urlify }}'>[supp]</a>
+    {% endif %}
     {% if include.paper.code %}
     <a href='{{ include.paper.code | urlify }}'>[code]</a>
     {% endif %}

@@ -13,6 +13,9 @@
     {% if include.paper.pdf %}
     %a{href: "{{ include.paper.pdf | urlify }}" } [pdf]
     {% endif %}
+    {% if include.paper.supp %}
+    %a{href: "{{ include.paper.supp | urlify }}" } [supp]
+    {% endif %}
     {% if include.paper.code %}
     %a{href: "{{ include.paper.code | urlify }}" } [code]
     {% endif %}

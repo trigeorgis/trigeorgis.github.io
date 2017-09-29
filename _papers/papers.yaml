@@ -15,7 +15,8 @@
      year = {2017}
    }
   pdf: 'https://ibug.doc.ic.ac.uk/media/uploads/documents/normal_estimation__cvpr_2017_-4.pdf'
-  url: 'https://github.com/trigeorgis/face_normals_cvpr17'
+  supp: 'https://www.doc.ic.ac.uk/~gt108/papers/trigeorgis2017normals_supp.pdf'
+  code: 'https://github.com/trigeorgis/face_normals_cvpr17'
 - bibtex: >
    @inproceedings{booth2017itw3dmm,
        author = {J. Booth and E. Antonakos and S. Ploumpis and G. Trigeorgis and Y. Panagakis and S. Zafeiriou},
@@ -82,7 +83,7 @@
       year={2015}
     }
   description: 'Spotlight.'
-- url: 'https://github.com/trigeorgis/deep-semi-nmf'
+- code: 'https://github.com/trigeorgis/deep-semi-nmf'
   pdf: 'http://arxiv.org/abs/1509.03248'
   bibtex: >
     @article{dsnmf2015,
@@ -91,7 +92,7 @@
       journal={{Transactions of Pattern Analysis and Machine Intelligence (TPAMI)}},
       year={2016}
     }
-- url: 'https://github.com/trigeorgis/deep-semi-nmf'
+- code: 'https://github.com/trigeorgis/deep-semi-nmf'
   pdf: 'http://jmlr.org/proceedings/papers/v32/trigeorgis14.pdf'
   supp: 'http://jmlr.org/proceedings/papers/v32/trigeorgis14-supp.pdf'
   bibtex: >
@@ -101,7 +102,7 @@
       booktitle={{International Conference on Machine Learning (ICML)}},
       year={2014}
     }
-- url: 'http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0090562'
+- pdf: 'http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0090562'
   bibtex: >
     @article{manifold2014,
       title={{An algorithm for finding biologically significant features in microarray data based on a priori manifold learning}},
