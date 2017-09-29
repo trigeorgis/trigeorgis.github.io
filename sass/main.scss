@@ -87,7 +87,7 @@ section h2 {
 }
 
 section.success {
-  color: #fff;
+  color: #111;
   background: $skyish;
 }
 
@@ -257,4 +257,12 @@ header .row {
 
 .fa.large:hover {
   color: lighten($blueish, 0.8);
+}
+
+section.success {
+  background-image: url("/imgs/bg.jpg");
+  background-position: right top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
