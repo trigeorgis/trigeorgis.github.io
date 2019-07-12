@@ -1,12 +1,32 @@
 ---
 - bibtex: >
+    @inproceedings{songsri2018deep,
+      title={Deep and Deformable: Convolutional Mixtures of Deformable Part-Based Models},
+      author={Songsri-in, Kritaphat and Trigeorgis, George and Zafeiriou, Stefanos},
+      booktitle={2018 13th IEEE International Conference on Automatic Face \& Gesture Recognition (FG 2018)},
+      pages={218--225},
+      year={2018},
+      organization={IEEE}}
+  description: 'Best paper award'
+
+- bibtex: >
+    @article{deng2019joint,
+      title={Joint multi-view face alignment in the wild},
+      author={Deng, Jiankang and Trigeorgis, George and Zhou, Yuxiang and Zafeiriou, Stefanos},
+      journal={IEEE Transactions on Image Processing},
+      volume={28},
+      number={7},
+      pages={3636--3648},
+      year={2019},
+      publisher={IEEE}
+    }
+- bibtex: >
     @article{dsnmf2015,
       title={{Deep Canonical Time Warping for simultaneous alignment and representation learning of sequences}},
       author={Trigeorgis, George and Nicolaou, Mihalis and Zafeiriou, Stefanos and Schuller, Bjoern W.},
       journal={{Transactions of Pattern Analysis and Machine Intelligence (TPAMI)}},
       year={2018}
     }
-  description: 'To be published'
 - bibtex: >
    @inproceedings{trigeorgis2017normals,
      author = {George Trigeorgis and Patrick Snape and Stefanos Zafeiriou and Iasonas Kokkinos},
@@ -31,7 +51,7 @@
   code: 'https://github.com/menpo/menpo3d/tree/master/menpo3d/morphablemodel'
 - pdf: 'https://ibug.doc.ic.ac.uk/media/uploads/documents/guler2017densereg.pdf'
   code: 'https://github.com/ralpguler/DenseReg'
-  bibtex: > 
+  bibtex: >
     @inproceedings{guler2017densereg,
       author = {R. Guler and Trigeorgis, George and E. Antonakos and P. Snape and S. Zafeiriou and I. Kokkinos},
       booktitle = {{Computer Vision and Pattern Recognition (CVPR)}},
